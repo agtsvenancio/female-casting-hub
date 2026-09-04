@@ -108,7 +108,7 @@ function Index() {
 
           <div className="relative min-h-[70vh] lg:min-h-[85vh]">
             <img
-              src={model2.url}
+              src={model2}
               alt="Modelo feminina em ensaio editorial da BOSSA Mgt"
               className="h-full w-full object-cover"
             />
@@ -155,14 +155,14 @@ function Index() {
           </div>
           <div className="mt-10 grid grid-cols-2 gap-px bg-border md:grid-cols-4">
             {[
-              { src: model1.url, alt: "Modelo em desfile com vestido azul" },
-              { src: model3.url, alt: "Editorial de moda com óculos e alfaiataria" },
-              { src: model4.url, alt: "Ensaio externo com casaco de pelo claro" },
-              { src: model5.url, alt: "Detalhe de top branco em ensaio editorial" },
-              { src: model6.url, alt: "Retrato em preto e branco com casaco de pelo" },
-              { src: model7.url, alt: "Retrato de beleza natural com sardas" },
-              { src: model8.url, alt: "Retrato de casting com vestido preto" },
-              { src: model9.url, alt: "Retrato editorial com blazer de tweed" },
+              { src: model1, alt: "Modelo em desfile com vestido azul" },
+              { src: model3, alt: "Editorial de moda com óculos e alfaiataria" },
+              { src: model4, alt: "Ensaio externo com casaco de pelo claro" },
+              { src: model5, alt: "Detalhe de top branco em ensaio editorial" },
+              { src: model6, alt: "Retrato em preto e branco com casaco de pelo" },
+              { src: model7, alt: "Retrato de beleza natural com sardas" },
+              { src: model8, alt: "Retrato de casting com vestido preto" },
+              { src: model9, alt: "Retrato editorial com blazer de tweed" },
             ].map((img) => (
               <img
                 key={img.src}
@@ -207,7 +207,7 @@ function Index() {
           </div>
           <div className="min-h-[60vh] lg:min-h-full">
             <img
-              src={model8.url}
+              src={model8}
               alt="Modelo feminina em estúdio para casting da BOSSA Mgt"
               loading="lazy"
               className="h-full w-full object-cover"
