@@ -173,6 +173,9 @@ function Index() {
                 src={img.src}
                 alt={img.alt}
                 loading="lazy"
+                decoding="async"
+                width={1200}
+                height={1600}
                 className="aspect-[3/4] w-full bg-background object-cover"
               />
             ))}
