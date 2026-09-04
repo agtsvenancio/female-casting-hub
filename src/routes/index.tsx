@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import logo from "@/assets/logo.webp";
-import model1 from "@/assets/model-1.jpg.asset.json";
-import model2 from "@/assets/model-2.jpg.asset.json";
-import model3 from "@/assets/model-3.jpg.asset.json";
-import model4 from "@/assets/model-4.jpg.asset.json";
-import model5 from "@/assets/model-5.jpg.asset.json";
-import model6 from "@/assets/model-6.jpg.asset.json";
-import model7 from "@/assets/model-7.jpg.asset.json";
-import model8 from "@/assets/model-8.jpg.asset.json";
-import model9 from "@/assets/model-9.jpg.asset.json";
+import model1 from "@/assets/model-1.jpg";
+import model2 from "@/assets/model-2.jpg";
+import model3 from "@/assets/model-3.jpg";
+import model4 from "@/assets/model-4.jpg";
+import model5 from "@/assets/model-5.jpg";
+import model6 from "@/assets/model-6.jpg";
+import model7 from "@/assets/model-7.jpg";
+import model8 from "@/assets/model-8.jpg";
+import model9 from "@/assets/model-9.jpg";
 
 const WHATSAPP =
   "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20me%20candidatar%20ao%20casting%20feminino%20da%20BOSSA%20Mgt.";
@@ -108,8 +108,12 @@ function Index() {
 
           <div className="relative min-h-[70vh] lg:min-h-[85vh]">
             <img
-              src={model2.url}
+              src={model2}
               alt="Modelo feminina em ensaio editorial da BOSSA Mgt"
+              width={1200}
+              height={1500}
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
@@ -155,20 +159,23 @@ function Index() {
           </div>
           <div className="mt-10 grid grid-cols-2 gap-px bg-border md:grid-cols-4">
             {[
-              { src: model1.url, alt: "Modelo em desfile com vestido azul" },
-              { src: model3.url, alt: "Editorial de moda com óculos e alfaiataria" },
-              { src: model4.url, alt: "Ensaio externo com casaco de pelo claro" },
-              { src: model5.url, alt: "Detalhe de top branco em ensaio editorial" },
-              { src: model6.url, alt: "Retrato em preto e branco com casaco de pelo" },
-              { src: model7.url, alt: "Retrato de beleza natural com sardas" },
-              { src: model8.url, alt: "Retrato de casting com vestido preto" },
-              { src: model9.url, alt: "Retrato editorial com blazer de tweed" },
+              { src: model1, alt: "Modelo em desfile com vestido azul" },
+              { src: model3, alt: "Editorial de moda com óculos e alfaiataria" },
+              { src: model4, alt: "Ensaio externo com casaco de pelo claro" },
+              { src: model5, alt: "Detalhe de top branco em ensaio editorial" },
+              { src: model6, alt: "Retrato em preto e branco com casaco de pelo" },
+              { src: model7, alt: "Retrato de beleza natural com sardas" },
+              { src: model8, alt: "Retrato de casting com vestido preto" },
+              { src: model9, alt: "Retrato editorial com blazer de tweed" },
             ].map((img) => (
               <img
                 key={img.src}
                 src={img.src}
                 alt={img.alt}
                 loading="lazy"
+                decoding="async"
+                width={1200}
+                height={1600}
                 className="aspect-[3/4] w-full bg-background object-cover"
               />
             ))}
@@ -207,7 +214,7 @@ function Index() {
           </div>
           <div className="min-h-[60vh] lg:min-h-full">
             <img
-              src={model8.url}
+              src={model8}
               alt="Modelo feminina em estúdio para casting da BOSSA Mgt"
               loading="lazy"
               className="h-full w-full object-cover"
