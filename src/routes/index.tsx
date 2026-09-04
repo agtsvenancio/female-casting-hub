@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import logo from "@/assets/logo.webp";
-import model1 from "@/assets/model-1.jpg.asset.json";
-import model2 from "@/assets/model-2.jpg.asset.json";
-import model3 from "@/assets/model-3.jpg.asset.json";
-import model4 from "@/assets/model-4.jpg.asset.json";
-import model5 from "@/assets/model-5.jpg.asset.json";
-import model6 from "@/assets/model-6.jpg.asset.json";
-import model7 from "@/assets/model-7.jpg.asset.json";
-import model8 from "@/assets/model-8.jpg.asset.json";
-import model9 from "@/assets/model-9.jpg.asset.json";
+import model1 from "@/assets/model-1.jpg";
+import model2 from "@/assets/model-2.jpg";
+import model3 from "@/assets/model-3.jpg";
+import model4 from "@/assets/model-4.jpg";
+import model5 from "@/assets/model-5.jpg";
+import model6 from "@/assets/model-6.jpg";
+import model7 from "@/assets/model-7.jpg";
+import model8 from "@/assets/model-8.jpg";
+import model9 from "@/assets/model-9.jpg";
 
 const WHATSAPP =
   "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20me%20candidatar%20ao%20casting%20feminino%20da%20BOSSA%20Mgt.";
