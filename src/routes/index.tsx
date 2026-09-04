@@ -110,6 +110,10 @@ function Index() {
             <img
               src={model2}
               alt="Modelo feminina em ensaio editorial da BOSSA Mgt"
+              width={1200}
+              height={1500}
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
